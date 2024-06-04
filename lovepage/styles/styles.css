@@ -45,11 +45,10 @@ button {
     background-color: rgb(246, 211, 217);
     transition: all .3s ease-in-out;
     position: relative;
+}
 
-    &:hover {
-        cursor: pointer;
-    }
-    
+button:hover {
+    cursor: pointer;
 }
 
 #imagen {
@@ -64,5 +63,4 @@ button {
 
 #si {
     margin-right: 10px;
-
 }
