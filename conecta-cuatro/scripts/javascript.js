@@ -1,3 +1,10 @@
+window.addEventListener("DOMContentLoaded", () => {
+    let aviso = document.getElementById('avisocaja');
+    document.getElementById('aceptar').addEventListener("click", () => {
+        aviso.style.display = 'none';
+    });
+});
+
 
 //BANNER IZQUIERDO
 
@@ -80,11 +87,11 @@ document.getElementById('comenzar').addEventListener('click', function() {
     if (turno) {
         document.getElementById('recuadro-jugador2').style.backgroundColor = color2;
         document.getElementById('recuadro-jugador1').style.backgroundColor = 'transparent';
-        document.getElementById('info').innerHTML = 'Le toca a <span style="color:'+ color2 +';">JUGADOR2</span>';
+        document.getElementById('info').innerHTML = 'Le toca a <span style="font-weight: 700; color:'+ color2 +';">JUGADOR2</span>';
     } else {
         document.getElementById('recuadro-jugador1').style.backgroundColor = color1;
         document.getElementById('recuadro-jugador2').style.backgroundColor = 'transparent';
-        document.getElementById('info').innerHTML = 'Le toca a <span style="color:'+ color1 +';">JUGADOR1</span>';
+        document.getElementById('info').innerHTML = 'Le toca a <span style="font-weight: 700; color:'+ color1 +';">JUGADOR1</span>';
 
     }
 
@@ -231,7 +238,7 @@ function cambiarTurno() {
         //rellenamos el recuadro de jugador2 y le damos transparencia al recuadro de jugador1
         document.getElementById('recuadro-jugador2').style.backgroundColor = color2;
         document.getElementById('recuadro-jugador1').style.backgroundColor = 'transparent';
-        document.getElementById('info').innerHTML = 'Le toca a <span style="color:'+ color2 +';">JUGADOR2</span>';
+        document.getElementById('info').innerHTML = 'Le toca a <span style="font-weight: 700; color:'+ color2 +';">JUGADOR2</span>';
 
         for (let index = 0; index < 6; index++) { //quitamos los eventos de raton de todos los divs de cada columna (sabiendo que hay 7)
             colA[index].removeEventListener('click', manejarRaton);
@@ -248,7 +255,7 @@ function cambiarTurno() {
         //rellenamos el recuadro de jugador1 y le damos transparencia al recuadro de jugador2
         document.getElementById('recuadro-jugador1').style.backgroundColor = color1;
         document.getElementById('recuadro-jugador2').style.backgroundColor = 'transparent';
-        document.getElementById('info').innerHTML = 'Le toca a <span style="color:'+ color1 +';">JUGADOR1</span>';
+        document.getElementById('info').innerHTML = 'Le toca a <span style="font-weight: 700; color:'+ color1 +';">JUGADOR1</span>';
 
         //quitamos el evento de teclado de jugador2
         document.removeEventListener('keydown', manejarTeclado);
@@ -284,7 +291,7 @@ function comprobarWin() {
     if (checkHorizontalWin() || checkVerticalWin() || checkDiagonalWin()) {
         //si el turno es de jugador1 gana jugador1 y si el turno es de jugador2 gana jugador2 (lo ponemos en verde)
         document.getElementById('info').textContent = turno ? 'Gana el jugador 2' : 'Gana el jugador 1';
-        document.getElementById('info').style.color = 'lightgreen';
+        document.getElementById('info').style.color = '#00cc00';
         //habilitamos el boton de comenzar
         document.getElementById('comenzar').disabled = false;
         //quitamos los eventos de teclado y raton
