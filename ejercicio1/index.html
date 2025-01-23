@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ejercicio 1 - Python</title>
+</head>
+<body>
+    <h1>Ejercicio 1: Suma de dos números</h1>
+    <p>Escribe un programa en Python que solicite al usuario dos números y luego imprima la suma de ambos.</p>
+    <h2>Enunciado:</h2>
+    <p>
+        Crea un programa que haga lo siguiente:
+        <ol>
+            <li>Solicite al usuario que ingrese el primer número.</li>
+            <li>Solicite al usuario que ingrese el segundo número.</li>
+            <li>Calcule la suma de los dos números ingresados.</li>
+            <li>Imprima el resultado de la suma.</li>
+        </ol>
+    </p>
+    <h2>Ejemplo de salida:</h2>
+    <pre>
+Ingresa el primer número: <command-input>5</command-input>
+Ingresa el segundo número: <command-input>3</command-input>
+La suma de 5 y 3 es 8
+    </pre>
+    <h2>Solución en Python:</h2>
+    <pre>
+        <button id="visibleSwitch"><img src="resources/notVisible.png"></button>
+        <code id="solucion">
+# Solicitar el primer número al usuario
+numero1 = float(input("Ingresa el primer número: "))
+
+# Solicitar el segundo número al usuario
+numero2 = float(input("Ingresa el segundo número: "))
+
+# Calcular la suma de los dos números
+suma = numero1 + numero2
+
+# Imprimir el resultado
+print(f"La suma de {numero1} y {numero2} es {suma}")
+        </code>
+    </pre>
+
+    <script src="script.js"></script>
+</body>
+</html>

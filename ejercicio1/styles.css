@@ -1,0 +1,75 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+p, ol {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: justify;
+}
+
+pre {
+    background-color: #333;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 5px;
+    width: 600px;
+    white-space: pre-wrap; 
+    position: relative;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+command-input {
+    color: orange;
+}
+
+button {
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 20px;
+    top: 0px;
+}
+
+#solucion {
+    filter: blur(5px);
+    transition: filter 0.3s;
+}

@@ -29,3 +29,7 @@ piezashtml.forEach(pieza => {
         }, 200);
     })
 });
+
+function noDisponible() {
+    alert('No disponible')
+}
